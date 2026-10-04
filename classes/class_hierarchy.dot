@@ -1,0 +1,13 @@
+digraph FitLifeClasses {
+  rankdir=TB;
+  node [shape=box, style="rounded", fontname="Arial"];
+  Workout -> StrengthWorkout;
+  StrengthWorkout -> GymWorkout;
+  Workout -> CardioWorkout;
+  CardioWorkout -> RunningWorkout;
+  Workout [label="Workout\nабстрактный базовый класс"];
+  StrengthWorkout [label="StrengthWorkout\nсиловая тренировка"];
+  GymWorkout [label="GymWorkout\nтренировка в зале"];
+  CardioWorkout [label="CardioWorkout\nкардиотренировка"];
+  RunningWorkout [label="RunningWorkout\nбеговая тренировка"];
+}

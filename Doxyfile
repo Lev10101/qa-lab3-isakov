@@ -1,0 +1,49 @@
+# Doxyfile 1.18 compatible configuration for FitLife
+PROJECT_NAME           = "FitLife"
+PROJECT_NUMBER         = "1.0"
+PROJECT_BRIEF          = "Документация ООП-модуля фитнес-приложения"
+OUTPUT_LANGUAGE        = Russian
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = NO
+
+INPUT                  = classes docs/mainpage.md oop_demo.php
+FILE_PATTERNS          = *.php *.md
+RECURSIVE              = YES
+EXCLUDE                = docs/html
+
+EXTRACT_ALL            = NO
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+GENERATE_LATEX         = NO
+GENERATE_TREEVIEW      = YES
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+
+HAVE_DOT               = YES
+DOT_PATH               = "C:/Program Files/Graphviz/bin"
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = YES
+GRAPHICAL_HIERARCHY    = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+UML_LOOK               = YES
+DOT_IMAGE_FORMAT       = svg
+INTERACTIVE_SVG        = YES
+
+USE_MATHJAX            = YES
+IMAGE_PATH             = docs/images
+INPUT_ENCODING         = UTF-8
+GENERATE_TIMESTAMP     = NO
+FULL_SIDEBAR           = NO
+SEARCHENGINE           = YES
+
+ALIASES                = "note=@par Примечание:"
